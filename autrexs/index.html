@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0b1020">
+  <meta name="description" content="Autrexs: reloj web moderno con cronómetro.">
+  <title>Autrexs — reloj avanzado</title>
+  <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+  <main class="shell">
+    <header class="topbar">
+      <a class="brand" href="./" aria-label="Autrexs, inicio"><span class="brand-mark">A</span><span>Autrexs</span></a>
+      <span class="status"><span class="status-dot"></span> RELOJ LOCAL</span>
+    </header>
+    <section class="hero" aria-labelledby="page-title">
+      <p class="eyebrow">TIME INTERFACE / 01</p>
+      <h1 id="page-title">Tu tiempo.<br><span>Tu ritmo.</span></h1>
+      <p class="intro">Una interfaz ligera para consultar la hora y medir intervalos.</p>
+    </section>
+    <section class="panel clock-panel" aria-labelledby="clock-heading">
+      <div class="panel-heading"><h2 id="clock-heading">Hora actual</h2><span id="timezone-label">Hora local del dispositivo</span></div>
+      <time class="clock" id="clock" aria-live="off">--:--:--</time>
+      <p class="date" id="date">Cargando fecha…</p>
+      <div class="clock-footer"><span class="live-indicator"></span> Actualización en tiempo real</div>
+    </section>
+    <section class="panel stopwatch-panel" aria-labelledby="stopwatch-heading">
+      <div class="panel-heading"><h2 id="stopwatch-heading">Cronómetro</h2><span>MM:SS.CS</span></div>
+      <output id="stopwatch" class="stopwatch" aria-live="off">00:00.00</output>
+      <div class="actions">
+        <button id="start-stopwatch" class="button primary" type="button">Iniciar</button>
+        <button id="lap-stopwatch" class="button" type="button" disabled>Vuelta</button>
+        <button id="reset-stopwatch" class="button" type="button">Reiniciar</button>
+      </div>
+      <ol id="laps" class="laps" aria-label="Tiempos de vuelta"></ol>
+    </section>
+    <footer class="footer"><span>Autrexs · versión inicial</span><span>Hecho para explorar el tiempo.</span></footer>
+  </main>
+  <script type="module" src="scripts/app.js"></script>
+</body>
+</html>
