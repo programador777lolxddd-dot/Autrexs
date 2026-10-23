@@ -1,0 +1,21 @@
+name: Quality checks
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Unit tests
+        run: node --test tests/*.test.js
+      - name: Verify structure
+        run: node scripts/verify-structure.mjs
+      - name: Check README references
+        run: node scripts/check-links.mjs
