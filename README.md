@@ -35,6 +35,19 @@ Después abre [http://localhost:8000/autrexs/](http://localhost:8000/autrexs/).
 
 También puedes usar cualquier servidor estático que sirva módulos ES correctamente.
 
+## 🐍 Paquete Python
+
+Autrexs también incluye una herramienta de terminal instalable con Python 3.10 o superior:
+
+```bash
+python -m pip install "git+https://github.com/programador777lolxddd-dot/Autrexs.git"
+autrexs
+autrexs now --12h
+autrexs count 90
+```
+
+También puedes instalar una copia local con `python -m pip install .`. Consulta [la guía del paquete Python](docs/PYTHON_PACKAGE.md). La aplicación web y el paquete de terminal son partes distintas del mismo proyecto.
+
 ## 🧪 Pruebas
 
 Necesitas Node.js 20 o superior:
