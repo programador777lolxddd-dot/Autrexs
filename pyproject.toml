@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "autrexs-clock"
-version = "0.1.0"
+version = "0.1.1"
 description = "Herramientas de reloj y tiempo de Autrexs"
 readme = "README.md"
 requires-python = ">=3.10"
@@ -31,9 +31,10 @@ dependencies = []
 test = ["pytest>=8"]
 
 [project.scripts]
-autrexs = "autrexs_clock.cli:main"
+autrexs = "autrexs:main"
 
 [tool.setuptools]
+py-modules = ["autrexs"]
 package-dir = {"" = "src"}
 
 [tool.setuptools.packages.find]
