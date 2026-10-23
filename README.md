@@ -78,7 +78,7 @@ No publiques claves API, tokens ni datos personales. La interfaz base muestra la
 
 ## 📄 Licencia
 
-El proyecto todavía no tiene una licencia de reutilización seleccionada por el autor. Consulta [LICENSE](LICENSE) antes de redistribuir o reutilizar el código.
+Autrexs incluye una licencia MIT. Lee el archivo [LICENSE](LICENSE) para consultar sus condiciones.
 
 ---
 
